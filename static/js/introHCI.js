@@ -22,6 +22,7 @@ function initializePage() {
 		var containingProject = $(this).closest(".project");
 		var description = $(containingProject).find(".project-description");
 		if (description.length == 0) {
+			// $(description).hide();
 			$(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
 			$(description).fadeIn();
 		} else {
